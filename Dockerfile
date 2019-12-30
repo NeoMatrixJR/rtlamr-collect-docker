@@ -5,5 +5,6 @@ RUN cd bin/
 RUN ls -lah
 RUN cd bin/
 RUN ls -lah
-RUN chmod a+x ./rtlamr*
-CMD ["./rtlamr -server=$RTLSERVER | ./rtlamr-collect"]
+CMD /bin/bash
+#RUN chmod a+x ./rtlamr*
+#CMD ["./rtlamr -server=$RTLSERVER | ./rtlamr-collect"]
