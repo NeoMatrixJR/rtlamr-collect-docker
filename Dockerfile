@@ -5,5 +5,5 @@ RUN chmod a+x ./bin/rtlamr*
 COPY start.sh ./
 RUN chmod a+x start.sh
 #CMD ["./bin/rtlamr -server=$RTLSERVER | ./bin/rtlamr-collect"]
-#CMD start.sh
-CMD /bin/bash
+CMD ["./start.sh"]
+#CMD /bin/bash
